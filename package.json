@@ -1,0 +1,26 @@
+{
+  "name": "CI-CD",
+  "version": "1.0.0",
+  "description": "Demostración de integración continua en un pequeño proyecto NodeJS y Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev" : "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William10101995/CI-CD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/William10101995/CI-CD/issues"
+  },
+  "homepage": "https://github.com/William10101995/CI-CD#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
+  }
+}
