@@ -1,0 +1,34 @@
+lenguage: node_js
+
+cache:
+  directories: 
+    - node_modules
+    - ~/.npm
+
+node_js:
+  - '15'
+
+git: 
+  depth: 3
+
+branches:
+  only: 
+  - main
+
+script:
+  - npm run test
+
+notifications:
+  slack:
+    secure: "obm6V2Cl9QKw3KvvOkpgbuCXnAYkblXG7OT5iQOeui11IAW+ENauSaKc6O90DKc57RV8T6GaYCo5AbKjxwVuHGxWQUi4gHmxsG+h0v/PT3uc3ejR1ccmCQ+WjYiisf1til4/0YN0wGZ5c/ugT8GMN1R5cDe/OqlOm3+WqTbSac8kmdEuWPidEhZEDKTDdAUu67qJFoMWHN/4/cAHBlWlRyDAnpcOtDDDCVSNox3nsQEPMkVc6RpAC/OKqHcn+kulQn1GBDTiuLSvxvSh2F09H10fKS7Pyd+uJsFdjygmmxHjfDpuPkT2J+d1sq/WiBb0+rJy/x7+Glzyn99uCikqFOd8YHDuc0F6l6MniWwJZs9kCGiNoQ0y6muNuWbSy1Ce0SlZOGfg52Z/pPIaGQoxD9KH2qld19nhOBLb6Fg8KZ7xFXwd1JL/gdXU4hIWoEPojOwXaOJ81uR+YWP/xdudDzaU9alJ1gmj+SGaXdFo6+I6W9WhZJs9bDb3MLFbC1lVCkfezfWXsa9H7XFEMf4R9Fh7b/+ECTCbQ6BUayAaCVVzr8/7z1YqyCF/azE/HPIGD3lehhBlmrxJ5kBUSSNiCayS0+ZaqqWZpttkDL+Gz79okqGDLvsw+OzDdyzDc8Cc2ZggGbHyhGiKT61tpRy3d1A2uLbNAf1oxs9RO5gOZI4="
+
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key:
+    secure: "T6YxG0usFH9Dy9lIOMgvmxOYsrVX+UdKzy/9QdRlhD/xlJ/PCtIjiKOAdGWSPCA34HlKWlqoatr0oXWPQdugQ9S53KCTNbBeiQvMOOcXEiq7/d1zm36qzitRd7TIeQdQAyYxfYI5CN7awoHoDY/84Wvg1I/dxi9MKWWIvvPDnESnAnp+I94niOATfefi0b1gDJui3eaQWszyec72LQbHQqoBvkeYcjvGmsrzVPWelqVKg29vKc5jl0Uz1r/Y+L3tbDUhu1NAV6xNmPesK6hSDpB8JxcHyR+4cEPT7lrxi1n6VULWbl18D/gx3EvLHZnT1aqn/ynxDOYxRZpAY7aPMa5IZyNvm7Bo7O2S03cbdmzypjEXFxTYtC5xdp+Gc8UJBiARdV7MrsrnZPnwm58F9Zw+f06gAtOWNRPkUe5RbXdltMaCKy9Tpp45GUMIkNlGrGFRAUPtVkC4Rup65gBBJbcyrjNSAVzDBb+1eaMSq02QRdgHVkokXMTrMmqTy7sJSmUVg1gDxXUjBAtkDZopyjNUYQfcNGIsEoemjdVW0wGAdqNsYGSwI1Yh9gMjy1fURLjaoiL2y+SBuaIFGH2s4i08ZzPxxBEiWfbfuXhvuVVlIIIMwrdiiiTX12Kq+qcL+aAmD8cjlfkAfF9UCMJoX1TmDVDxo5DfKgnS9tI17M8="
+  app: ingenieriadesofware
+  on: 
+    repo: William10101995/CI-CD
+    branch: main
