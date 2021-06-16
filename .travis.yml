@@ -15,8 +15,14 @@ branches:
   only: 
   - main
 
+addons:
+  sonarcloud: 
+    organization: william10101995
+    token: 9857e7dba21a2802dff4890b412518092f4c0bca
+
 script:
   - npm run test
+  - sonar-scanner
 
 notifications:
   slack:
