@@ -22,7 +22,7 @@ addons:
 
 script:
   - npm run test
-  - sonar-scanner
+  - sonar-scanner -X
 
 notifications:
   slack:
