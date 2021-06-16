@@ -21,7 +21,7 @@ addons:
     token: 9857e7dba21a2802dff4890b412518092f4c0bca
 
 script:
-  - npm run test
+  - npm run coverage
   - sonar-scanner 
 
 notifications:
