@@ -3,9 +3,9 @@ const request = require('supertest');
 
 describe('GET /', () => {
     
-    it('responds with 200', async () => {
+    it('responds Hello World!', async () => {
        await request(app)
             .get('/')
-            .expect('Hello Word!'); 
+            .expect('Hello World!'); 
     });
 })
