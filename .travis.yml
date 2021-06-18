@@ -18,7 +18,8 @@ branches:
 addons:
   sonarcloud: 
     organization: 'william10101995'
-    token: 9857e7dba21a2802dff4890b412518092f4c0bca
+    token:
+      secure: "a4jjg/ifeC1H5R4wKfZZWhfSv9ImeqHI4sI9tZ+5WmpnHSK8xz9SD/Xz3AFaVvvcvw20L/wBSlc7ZznAY788Eh0qKxv+g3/GCvRFaYpmIc6l0sR/Y1hkKG873QdZCn40bSB/rIe3Yh7S1/ZbMzqM7sB6AjY11GPBImdDniRK1j8L0CJ/NuY92cSjqg3nr5NKN36Buwj7moOLZE6do6uvZnhOE46+ueTs1mdrUFhqOpU//qZnHXFYYzwM3wzz9z5rZ43cGtani24B7tKN1ts8RwmrxPM89UO5h1UOdz1JkdTuWpecR/wqYQQwMBXk7Hkp4gjoBsnLvkRIaoXOtCamPC2Cq2dABdvDgc5Lke+hQgfVD67Sug/AlfcfVZozB8srS31CfRjsqpID7vMHewmLCFnYWWmie2bgPPnL+yxjWlPf5kKeA7+7ZuC9Ih9S9r0yNS6UhwRLLMDpvHiP11ZiSJHjMHabVtTU4STZR6yiVrYtSEO11e+Nd5bIARXI5NYK2WME143Y+AyQcNtTpTLH4LgTgvPN9Nwtrw7dX043RSd20u2wy587EIk6oWnMIaCQrnmwjfIsZempvESsP1F3p2MuKYvsIWmAu5WkYP4iG4sQ4fXSNDQspqjb7SCqgNurtp2cPXqSFd7oM6DtvI6nLU2PBsykRqdTKUECpGoHPkM="
 
 script:
   - npm run coverage
