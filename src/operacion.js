@@ -1,9 +1,7 @@
-function Producto (a, b) {
-const result = a * b;
-if (result == null){
-	return result;
-}
-return result
+function Producto(a, b) {
+  const result = a * b;
+  
+  return result;
 }
 
-mudule.export = { Producto }
+module.exports = { Producto };
