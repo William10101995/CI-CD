@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "coverage": "nyc --reporter=text --reporter=lcov npm run test",
-    "dev": "node ./src/server.js",
+    "dev": "npm run test && node ./src/server.js",
     "start": "node ./src/server.js"
   },
   "repository": {

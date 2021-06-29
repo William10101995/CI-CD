@@ -6,4 +6,9 @@ app.get("/", async (req, res) => {
   res.status(200).send("Hello World!");
 });
 
+app.get("/", async (req, res) => {
+  res.status(200).send("Hello World!");
+});
+
+
 module.exports = app;
