@@ -16,6 +16,7 @@ branches:
   only: 
   - main
 
+
 addons:
   sonarcloud: 
     organization: 'william10101995'
