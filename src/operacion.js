@@ -1,5 +1,5 @@
 function Producto(a, b) {
-  if (a < 1) {
+  if (a == 1) {
     return a * b;
   }
   return a * b;
