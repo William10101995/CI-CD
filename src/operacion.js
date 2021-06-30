@@ -1,8 +1,6 @@
 function Producto(a, b) {
-  
-  if (a) {
-    return a * b;
-  }
+  const result = a * b;
+  return result
   return a * b;
 }
 
