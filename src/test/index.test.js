@@ -6,6 +6,6 @@ describe('GET /', () => {
     it('Test Response', async () => {
        await request(app)
             .get('/')
-            .expect('El Resultado de la Suma es 6'); 
+            .expect('El Resultado del Producto es 6'); 
     });
 })

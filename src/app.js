@@ -5,8 +5,8 @@ const app = express();
 const op = require("./operacion");
 
 app.get("/", async (req, res) => {
-  const suma = op.Producto(2, 3);
-  res.status(200).send(`El Resultado de la Suma es ${suma}`);
+  const producto = op.Producto(2, 1);
+  res.status(200).send(`El Resultado del Producto es ${producto}`);
 });
 
 module.exports = app;
